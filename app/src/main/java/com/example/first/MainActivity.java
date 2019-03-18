@@ -1,9 +1,10 @@
 package com.example.first;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,5 +16,10 @@ public class MainActivity extends AppCompatActivity {
     public void Clickbutton(View v)
     {
         Toast.makeText(getApplicationContext(), "Hello World!", Toast.LENGTH_LONG).show();
+    }
+    public void ClickAddress(View v)
+    {
+        Intent intent = new Intent(this, testAddress.class);
+        startActivity(intent);
     }
 }

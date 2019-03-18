@@ -669,6 +669,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_test_address
 id add
 id alertTitle
 id all
@@ -679,6 +680,7 @@ id beginning
 id blocking
 id bottom
 id button
+id button2
 id buttonPanel
 id center
 id center_horizontal
@@ -739,6 +741,7 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id result
 id right
 id right_icon
 id right_side
@@ -789,6 +792,7 @@ id topPanel
 id uniform
 id up
 id useLogo
+id webView
 id withText
 id wrap
 id wrap_content
@@ -826,6 +830,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_test_address
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
