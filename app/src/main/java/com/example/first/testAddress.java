@@ -1,5 +1,6 @@
 package com.example.first;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,9 @@ public class testAddress extends AppCompatActivity {
     private WebView webView;
     private TextView result;
     private Handler handler;
+
+    public static String code_Address;
+    public static String result_Address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +53,26 @@ public class testAddress extends AppCompatActivity {
                 public void run() {
                     result.setText(String.format("(%s) %s %s", arg1, arg2, arg3));
                     // WebView를 초기화 하지않으면 재사용할 수 없음
+                    code_Address = arg1;
+                    result_Address = arg2 + arg3;
+                    setresultAddress(result_Address);
+                    OnSuccess();
                     init_webView();
                 }
             });
         }
     }
+
+    private void OnSuccess() {
+        Intent intent =new Intent(getApplicationContext(), MainActivity.class);
+        resultAddress Addr = new resultAddress(result_Address, code_Address);
+        intent.putExtra("class", Addr);
+        setResult(RESULT_OK, intent);
+        finish();
+    }
+
+    public void setresultAddress(String temp) {
+        this.result_Address = temp;
+    }
+
 }

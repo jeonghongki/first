@@ -645,6 +645,7 @@ drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
+id Address_test
 id CTRL
 id FUNCTION
 id META
@@ -671,6 +672,8 @@ id actions
 id activity_chooser_view_content
 id activity_test_address
 id add
+id address_test_input
+id address_test_number
 id alertTitle
 id all
 id always
@@ -680,7 +683,6 @@ id beginning
 id blocking
 id bottom
 id button
-id button2
 id buttonPanel
 id center
 id center_horizontal
